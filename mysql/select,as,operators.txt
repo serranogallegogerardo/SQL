@@ -1,0 +1,20 @@
+###Selección. Unicidad. Alias. Columnas calculadas ###
+
+#seleccionar una tabla con datos especificos utilizando
+#select y from
+
+SELECT Code,Name,Continent,Population 
+FROM world.country;
+
+#select distinct
+#SELECT DISTINCT Language FROM countrylanguage 
+#ORDER BY Language ;
+
+#Cambiar nombre de la columna
+SELECT Name AS Ciudad , population AS Poblacion
+FROM city LIMIT 5000;
+
+#Restar 2 campos en Mysql
+SELECT Name AS 'Pais',GNP AS 'Producto Bruto Nacional',
+GNPOld AS 'Producto Bruto Nacional Anterior', 
+GNP-GNPOld AS 'Diferencia' FROM country;
