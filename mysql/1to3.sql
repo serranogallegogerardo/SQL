@@ -1,6 +1,9 @@
 
 
 /*
+GUIDE:
+https://sites.google.com/view/consultassql-avanzado/casi-pro?authuser=0
+
 Ejercicio 1:
 SELECT NombreVendedor,Producto 
 FROM vendedores,ventas
