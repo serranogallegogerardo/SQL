@@ -1,0 +1,39 @@
+#Consejo prof: Mirar mysql en w3school y lito
+
+#Se puede buscar MAX y MIN
+#AVG Average Promedio
+
+SELECT * FROM BD
+ORDER by Campo;
+
+#seleccionar los nulos
+WHERE Campo IS NULL;
+
+#quiero limtiar a una cantidad de registros X
+LIMIT 10;
+
+SELECT * , MAX(Population) FROM city;
+
+#Aquellos que empiecen con estos caracteres
+LIKE %X%
+
+#Aquellos que solo quiero
+IN ('xd'.'xd2')
+
+#Buscar en un rango
+BETWEEN 323 AND 5000;
+
+#Abrir varias tablas
+SELECT * FROM tabla1 as t1, tabla2 as t2
+WHERE t1.capo = t2.campo
+
+
+
+SELECT c.Population, p.Capital FROM city as c, country as P
+Where c.CountryCode = P.code;
+
+#Crear tablas/bd
+
+https://sqldbm.com/Home/
+
+#Se puede anidar varios selects
