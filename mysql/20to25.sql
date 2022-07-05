@@ -16,7 +16,7 @@ SELECT FROM country WHERE IndepYear IS Null;
 
 
 SELECT FROM country as c
-WHERE c.Name LIKE "AX";
+WHERE c.Name LIKE "A%";
 
 # Listar todos los datos de los países cuyo nombre sea compuesto # (más de una palabra). (Se esperan 15 columnas y 66 registros).
 
@@ -30,4 +30,4 @@ WHERE c.Name LIKE "%%";
 
 # (Se esperan 5 columnas y 372 registros).
 
-SELECT FROM city as C WHERE c.Name LIKE "X-X OR c.District LIKE "-";
+SELECT FROM city as C WHERE c.Name LIKE "%-%" OR c.District LIKE "-";
